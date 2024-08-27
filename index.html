@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Anna - Where r U </title>
+  <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"></script><link rel="stylesheet" href="./style.css">
 
-                <h1 class="header_text">Anna tha lỗi cho Bảnh nhaaa??</h1>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class="bg-purple">
+        
+        <div class="stars">
+            
+            <div class="central-body">
+                
+                <!--<a href="#" class="btn-go-home" target="_blank">GO BACK HOME</a>-->
             </div>
-            <div class="gif_container">
-              <img src="https://media.giphy.com/media/d6Knl7IbYdfbqJfoYd/giphy.gif?cid=ecf05e47mlkqdnbjvhiznmjo9s539nwathwn6hygoz0idxyz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="cute animated illustration">
-            <div class="buttons">
-                <button class="btn" id="yesButton" onClick="nextPage()">Tạm châm trước</button>
-                <br>
-                <br>
-                <br>
-                <br>
-                <button class= "btn" id="noButton" onmouseover="moveButton()" onClick="moveButton()">Khoải</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
+            <div class="objects">
+                <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">
+                <div class="earth-moon">
+                    <img class="object_earth" src="http://salehriaz.com/404Page/img/earth.svg" width="100px">
+                    <img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg" width="80px">
+                </div>
+                <div class="box_astronaut">
+                    <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="140px">
+                </div>
+            </div>
+            <div class="glowing_stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
 
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script>
             </div>
+
         </div>
 
     </body>
+<!-- partial -->
+  <script  src="./script for lost in space.js"></script>
+
+</body>
 </html>
